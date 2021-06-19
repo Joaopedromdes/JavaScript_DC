@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orientação a objetos</title>
+</head>
+<body>
+    <script>
+        function Pessoa(){
+            this.nome = "Guilherme"
+            this.idade = 27
+            this.printNome = function(){
+                alert(this.nome) //Funções dentro de objetos
+            }
+        }
+        var pessoa = new Pessoa();
+        var pessoa2 = new Pessoa();
+        pessoa2.nome = "joao"
+        pessoa2.printNome();
+        pessoa.printNome();
+
+        function Animal(nome,peso){
+            if(nome == undefined){
+                nome = "Girafa"
+            }
+            if(peso == undefined){
+                peso = "120kg"
+            }
+            this.nome = nome;
+            this.peso = peso
+        }
+        var animal = new Animal('Cachorro', '15kg');
+        var animal2 = new Animal('Gato', '7kg')
+        var animal3 = new Animal();
+        alert(animal.nome)
+        alert(animal2.peso)
+        alert(animal3.nome)
+
+        //Objeto como parâmetro da função
+        
+
+    </script>
+</body>
+</html>

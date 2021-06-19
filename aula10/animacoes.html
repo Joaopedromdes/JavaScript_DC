@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animações</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            margin-left: 0px;
+        }
+        .animEsquerda{
+            transition: 1s;
+            margin-left: 100px;
+            background-color: aqua;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <script>
+        var box = document.querySelectorAll('.box')[0]
+        /*setTimeout(()=>{ //Em 1 segundo ele vai ter essa animação
+            box.classList.add('animEsquerda');
+        },1000);*/
+
+        box.addEventListener('click', function() /* Mesma coisa que ()=>*/{
+            box.classList.add('animEsquerda');
+        })
+
+    </script>
+</body>
+</html>

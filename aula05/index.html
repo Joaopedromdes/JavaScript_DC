@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+    <script>
+    function teste(nome, idade){
+        console.log("O nome passado é: " + nome)
+        console.log("A idade é: " + idade)
+        console.log('------------------------')
+    }
+    teste('Erika', 42);
+    teste('Eridam', 71)
+
+    function pegarNome(){
+        return "Guilherme"
+        //Depois do return a função terminou, mesmo que você coloque mais coisas depois não irá funcionar.
+    }
+    var nome = pegarNome() //É a mesma coisa de: var nome = "Guilherme"
+    console.log(nome)
+
+    function pegarNomee(parametro){
+        if(parametro == 1){
+            return "Guilherme"
+        }else{
+            return "Outro nome"
+        }
+    }
+    var nomee = pegarNomee(2)
+    console.log(nomee)
+
+    var func = function(){
+        alert('Olá, mundo!')
+    }
+    func()
+
+
+
+    </script>   
+</body>
+</html>

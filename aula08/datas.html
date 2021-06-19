@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datas</title>
+</head>
+<body>
+    <script>
+        var date = new Date();
+       /* //Dia do mês
+        alert(date.getDate())
+        //Dia da semana
+        alert(date.getDay())
+        //Ano
+        alert(date.getFullYear())
+
+        alert(date.getMonth())
+        //Horas
+        alert(date.getHours())
+        //Minutos
+        alert(date.getMinutes())*/
+
+        var date = new Date('06/16/2021');
+        alert(date.getDate())
+        var date2 = new Date('06/19/2021')
+        var diferenca = (date2.getTime() - date.getTime()) / (1000 * 3600 * 24); /*Essa conta é para transformar milisegundos em dias, 1000=1seg,
+        3600seg = 1hora, 24h = 1dia */
+        alert(diferenca)
+       
+
+    </script>
+</body>
+</html>

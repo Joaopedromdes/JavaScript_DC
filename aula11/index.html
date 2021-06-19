@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax tradicional</title>
+</head>
+<body>
+    <script>
+        setTimeout(function(){
+            var request = new XMLHttpRequest();
+            request.open('GET', 'https://jsonplaceholder.typicode.com/todos/1',true);
+            request.onload = function(){
+                if(this.status >= 200 && this.status < 400){
+                    var data = JSON.parse(this.response);
+                    console.log(data);
+                }else{
+
+                }
+            }
+            request.onerror = function(){
+
+            }
+            request.send();
+        },2000)
+      
+    </script>
+</body>
+</html>

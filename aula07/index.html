@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções instanciadas</title>
+</head>
+<body>
+    <script>
+        function Pessoa(){
+            this.nome = "Guilherme"; //Só irá funcionar com o this, porque estamos trabalhando com orientação a objetos
+
+        }
+
+        var pessoa = new Pessoa();
+        var pessoa2 = new Pessoa();
+        pessoa.nome = "Joao"; //Mudando o nome do objeto pessoa
+        alert(pessoa.nome)
+        alert(pessoa2.nome) //O nome será guilherme pois todo objeto virá com Guilherme no nome padrão
+    </script>
+</body>
+</html>

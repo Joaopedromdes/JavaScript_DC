@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+</head>
+<body>
+    <script>
+        class Animal{
+            constructor(nome){ 
+                this.nome = nome 
+           }
+           printNome(){
+               return this.nome;
+           }
+        }
+
+        class Cachorro extends Animal{
+            constructor(nome){
+                super(nome) //Pega o construtor da classe extendida
+                this.raca = 'Bulldog';
+            }
+            printRaca(){
+                return this.raca
+            }
+        }
+        cachorro = new Cachorro("Maltes");
+        alert(cachorro.printNome()) //O printNome é da classe Animal, por causa do extends o cachorro pode usar esse método
+        alert(cachorro.printRaca())
+
+
+        animal = new Animal('Hipopotamo');
+        alert(animal.printNome())
+    </script>
+</body>
+</html>
